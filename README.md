@@ -17,7 +17,7 @@ under the CECAP/dataset directory.
 2. run load_wizard.py --> this will create pre-processed files under the dataset/wizard-kat directory.
 
 3. Download cecap_wikipedia data from [here](https://sogang365-my.sharepoint.com/:u:/g/personal/hongtaesuk_o365_sogang_ac_kr/EQiEurbmyl9Lk5v8BDhlqN8BGQtcda_umQDfijT_EkoCtg?e=6asd7j).
-
+and put it under the dataset/cecap directory
 
 ## Train and eval Knowledge Selection model.
 ```bash
