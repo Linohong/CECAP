@@ -11,7 +11,7 @@ from dataclasses import dataclass
 import logging
 import random
 import os
-from .cecap_utils_lino import sort_candidates_by
+#from .cecap_utils_lino import sort_candidates_by
 
 SEP = '</s>'
 logger = logging.getLogger(__name__)
@@ -53,11 +53,17 @@ class KATDataset(Dataset):
         if cecap != False and type(cecap) == list:
             multiple_data = True
             for c in cecap:
-                data_file = './dataset/cecap'
+                data_file = '../dataset/cecap'
                 if 'cecap_reddit' in c:
                     data_file = os.path.join(os.path.abspath(data_file), c)
                 else:
                     data_file = os.path.join(os.path.abspath(data_file), c + '.data')
+                    print('*********************************************')
+                    print('*********************************************')
+                    print("********* PRINT FOR FIXING ERROR ************ ")
+                    print('*********************************************')
+                    print('*********************************************')
+                    print(data_file)
                 self.examples.extend(self.load_file(data_file))
 
             print('2022.05.01 -- adjust the number of examples to %d'%(num_ks_sample))
