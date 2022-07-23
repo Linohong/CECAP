@@ -53,7 +53,7 @@ class KATDataset(Dataset):
         if cecap != False and type(cecap) == list:
             multiple_data = True
             for c in cecap:
-                data_file = '../dataset/cecap'
+                data_file = 'dataset/cecap'
                 if 'cecap_reddit' in c:
                     data_file = os.path.join(os.path.abspath(data_file), c)
                 else:

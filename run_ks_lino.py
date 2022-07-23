@@ -48,7 +48,7 @@ from transformers.optimization import AdamW, get_linear_schedule_with_warmup
 from ks.ks_data_lino import KATDataset, KATDataCollator, ks_Example
 from kat.modeling_lino import BartForConditionalGeneration
 from transformers import BartForConditionalGeneration as OriginBart
-from kat.modeling_basic_BART import BartForConditionalGeneration as LinoOriginBart
+#from kat.modeling_basic_BART import BartForConditionalGeneration as LinoOriginBart
 from dial.metrics import dialogue_ks_evaluation
 
 try:
